@@ -1,0 +1,43 @@
+1.What is an interface in Java?
+2.When would you use an abstract class instead of an interface?
+3.What are the differences between a public method and a protected one?
+4.What is a static variable?
+5.What is an Exception in Java?
+6.Is it a good practice to catch a RuntimeException?
+7.What is the keyword to use in a method signature to allow non-catching of an exception in this method?
+8.What is the latest version of Java?
+9.What is the purpose of a garbage collector?
+10.What is the difference between a HashSet and a TreeSet?
+11.Which Thread method is called when a thread starts?
+12.Is it possible to update a String object (without using introspection)?
+13.What is the contract between the methods equals and hashcode?
+14.What are time and space complexity?
+15.What is the O-notation?
+16.What is the time complexity of binary search?
+17.Given a pointer to the head node of a linked list, reverse this linked list
+18.Give the name of 3 sorting algorithms and explain their logic
+19.What is the difference between DFS and BFS?
+20.Implement a recursive and an iterative method to compute a given Fibonacci number
+21.What are the features in JAVA?
+22.How does Java enable high performance?
+23.Name the Java IDE's?
+24.What do you mean by Constructor?
+25.What is meant by the Local variable and the Instance variable?
+26.What are the OOPs concepts?
+27.What is Inheritance?
+28.What is Encapsulation?
+29.What is Polymorphism?
+30.What is Method Overriding?
+31.What is Overloading?
+32.What is an Interface?
+33.What is an Abstract class?
+34.What's the difference between an Array and an Array List?
+35.What's the difference between a String, a String Builder and a String Buffer?
+36.What's the difference between Public and Private access?
+37.What's the difference between HashMap and HashTable?
+38.What's the difference between HashSet and TreeSet?
+39.What's the difference between Abstract class and Interface?
+40.What are Collections in Java?
+41.What are all the classes and interfaces available in collections in Java?
+42.What does Ordered and Sorted mean in collections?
+43.

@@ -1,0 +1,11 @@
+1.Yes
+21.Object-oriented, Inheritance, Encapsulation, Polymorphism, Abstraction.
+22.Java uses Just In Time compiler to convert instructions into bytecodes.
+23.Eclipse and NetBeans are the IDE's of JAVA.
+24.A method which has the same name as the class name, and which exists by default but can be overloaded.
+25.Local variables have a scope limited to the method where they exist and Instance variables have a scope limited to the class.
+26.Inheritance, Encapsulation, Polymorphism, Abstraction, Interface.
+27.A relationship between classes, where one extends from another and inherits it's code so it can be reused.
+28.A form of protecting code from interference and assuring it's maintainability.
+29.TESTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+30.
