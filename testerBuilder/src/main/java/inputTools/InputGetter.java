@@ -1,6 +1,8 @@
 package inputTools;
 
 
+import inputTools.customExceptions.NotAValidNumberException;
+
 import java.io.*;
 import java.util.HashMap;
 
@@ -10,20 +12,31 @@ public class InputGetter {
     private String filepathQ = "src/lib/testfileQ.txt";
     private HashMap<Integer, String> answerList = new HashMap<Integer, String>();
     private String filepathA = "src/lib/testfileA.txt";
+    private HashMap<Integer, String> dummyList = new HashMap<>();
+    private String filepathDA = "src/lib/testfileDA.txt";
+    private FileChecker fileChecker = new FileChecker();
 
     // gets the questions from a txt file and puts them in a hashmap.
     // txt must have one question per line, starting with a unique number
     // and a . separating question from said number.
 
-    public void getQuestions() {
-        getInputs(filepathQ);
+
+    public HashMap<Integer, String> getQuestions() {
+        getInputs(filepathQ, "Q");
+        return questionList;
     }
 
-    public void getAnswers() {
-        getInputs(filepathA);
+    public HashMap getAnswers() {
+        getInputs(filepathA, "A");
+        return answerList;
     }
 
-    public void getInputs(String filepath) {
+    public HashMap getDummyList() {
+        getInputs(filepathDA, "DA");
+        return dummyList;
+    }
+
+    public void getInputs(String filepath, String documentType) {
         try {
             FileInputStream file = new FileInputStream(filepath);
             String thisLine;
@@ -33,9 +46,15 @@ public class InputGetter {
 
             while ((thisLine = readPhrase.readLine()) !=null) {
                 String line = thisLine;
-                int divider = line.indexOf(".");
-                String phrase = line.substring(divider+1);
-                int num = Integer.parseInt(line.substring(0, divider));
+                int dividerBetweenNumberAndPhrase = line.indexOf(".");
+
+                //System.out.println("Divider is: " + dividerBetweenNumberAndPhrase + " and: " + line);
+
+                String phrase = line.substring(dividerBetweenNumberAndPhrase+1);
+                String phraseNumber = line.substring(0, dividerBetweenNumberAndPhrase);
+
+                int num = fileChecker.checksNumberConforms(phraseNumber);
+                    line.indexOf("#");
 
                 if (filepath.equals(filepathQ)) {
                     questionList.put(num, phrase);
@@ -55,18 +74,27 @@ public class InputGetter {
         } catch (IOException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
+        } catch (NotAValidNumberException e) {
+            e.printStackTrace();
         }
     }
 
 
+    private void putIntoList(String type, int phraseNumber, String phrase) {
+        if (type.equals("Q")) {
+            questionList.put(phraseNumber, phrase);
+        }
 
-    public String getQA(int key) {
+        if (type.equals("A")) {
+            answerList.put(phraseNumber, phrase);
+        }
 
-        String Q = questionList.get(key);
-        String A = answerList.get(key);
-        String QA = "Q: " + Q + "\n" + "A: " + A;
-        return QA;
+        if (type.equals("DA")) {
+            dummyList.put(phraseNumber, phrase);
+        }
+
     }
+
 
 
     }

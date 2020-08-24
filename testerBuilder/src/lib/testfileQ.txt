@@ -5,7 +5,7 @@
 5.What is an Exception in Java?
 6.Is it a good practice to catch a RuntimeException?
 7.What is the keyword to use in a method signature to allow non-catching of an exception in this method?
-8.What is the latest version of Java?
+8.What is the latest version of Java? How is it different?
 9.What is the purpose of a garbage collector?
 10.What is the difference between a HashSet and a TreeSet?
 11.Which Thread method is called when a thread starts?
@@ -40,4 +40,102 @@
 40.What are Collections in Java?
 41.What are all the classes and interfaces available in collections in Java?
 42.What does Ordered and Sorted mean in collections?
-43.
+43.Name 5 different Design Patterns
+44.What are the main features in Java?
+45.What are the IDE's of Java?
+46.What is a Class?
+47.What is an Object?
+48.What is the difference between Public and Private access specificiers?
+49.What is the difference between Default and Protected access specificer?
+50.Explain the different lists available in the collection.
+51.Explain the Priority Queue.
+52.What is an Exception?
+53.What types of Exception are there?
+54.What are the different ways to handle exceptions?
+55.What are the advantages of Exception handling?
+56.What are the Exception handling keywords in Java?
+57.Explain about Exception Propagation.
+58.What is the final keyword in Java?
+59.What is a Thread?
+60.How do you make a thread in Java?
+61.Explain the join() method.
+62.What does the yield method of the Thread class do?
+63.Explain the wait() method.
+64.What is the difference between notify() method and notifyAll() method in Java?
+65.How to stop a thread in Java? 
+66.What is the sleep() method in a thread?
+67.When should you use the Runnable interface Vs Thread class in Java?
+68.What is the difference between start() and run() methods of Thread class?
+69.What is multi-threading?
+70.Explain the thread life cycle in Java.
+71.What is Synchronization?
+72.What is the disadvantage of Synchronization?
+73.What is meant by Serialization?
+74.What is the purpose of a transient variable?
+75.Which methods are used during the Serialization and Deserialization process?
+76.What is the purpose of a Volatile Variable?
+77.What is the difference between Serialization and Deserialization?
+78.What is SerialVersionUID?
+79.What is JMS?
+80.What are the types of communication provided by JMS?
+81.What is the number of messaging models available in JMS.
+82.How do you find the missing number in a given integer array of 1 to 100?
+83.How do you find the duplicate number on a given integer array?
+84.How do you find the largest and smallest number in an unsorted integer array?
+85.How do you find all pairs of an integer array whose sum is equal to a given number?
+86.How do you find duplicate numbers in an array if it contains multiple duplicates?
+87.How are duplicates removed from a given array in Java? 
+88.How is an integer array sorted in place using the quicksort algorithm? 
+90.How do you remove duplicates from an array in place? 
+91.How do you reverse an array in place in Java?
+92.How are duplicates removed from an array without using any library? 
+93.How do you find the middle element of a singly linked list in one pass? 
+94.How do you check if a given linked list contains a cycle? How do you find the starting node of the cycle? 
+95.How do you reverse a linked list? 
+96.How do you reverse a singly linked list without recursion? 
+97.How are duplicate nodes removed in an unsorted linked list? 
+98.How do you find the length of a singly linked list? 
+99.How do you find the third node from the end in a singly linked list? 
+100.How do you find the sum of two linked lists using Stack? 
+101.How do you print duplicate characters from a string? 
+102.How do you check if two strings are anagrams of each other?
+103.How do you print the first non-repeated character from a string? 
+104.How can a given string be reversed using recursion?
+105.How do you check if a string contains only digits? 
+106.How are duplicate characters found in a string?
+107.How do you count a number of vowels and consonants in a given string?
+108.How do you count the occurrence of a given character in a string?
+109.How do you find all permutations of a string?
+110.How do you reverse words in a given sentence without using any library method? 
+111.How do you check if two strings are a rotation of each other? 
+112.How do you check if a given string is a palindrome? 
+113.How is a binary search tree implemented? 
+114.How do you perform preorder traversal in a given binary tree?
+115.How do you traverse a given binary tree in preorder without recursion?
+116.How do you perform an inorder traversal in a given binary tree?*
+117.How do you print all nodes of a given binary tree using inorder traversal without recursion? 
+118.How do you implement a postorder traversal algorithm? 
+119.How do you traverse a binary tree in postorder traversal without recursion?
+120.How are all leaves of a binary search tree printed?
+121.How do you count a number of leaf nodes in a given binary tree?
+122.How do you perform a binary search in a given array?
+123.How is a bubble sort algorithm implemented? 
+124.How is an iterative quicksort algorithm implemented? 
+125.How do you implement an insertion sort algorithm? 
+126.How is a merge sort algorithm implemented? 
+127.How do you implement a bucket sort algorithm?
+128.How do you implement a counting sort algorithm?
+129.How is a radix sort algorithm implemented?
+130.How do you swap two numbers without using the third variable? 
+131.How do you check if two rectangles overlap with each other? 
+132.How do you design a vending machine? 
+133.What is Hibernate?
+134.What are the major advantages of Hibernate Framework?
+135.What are the advantages of using Hibernate over JDBC?
+136.What is an ORM tool?
+137.Why use Hibernate Framework?
+138.What are the different functionalities supported by Hibernate?
+139.What are the technologies that are supported by Hibernate?
+140.What is HQL?
+141.How to achieve mapping in Hibernate?
+142.Name some of the important interfaces of Hibernate framework.
