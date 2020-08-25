@@ -4,7 +4,7 @@ import terminalVersion.TerminalViewer;
 
 import java.io.IOException;
 
-public class InputGetterTest {
+public class TerminaManager {
 
     public static void main(String[] args) {
         InputGetter inputGetterTest = new InputGetter();
