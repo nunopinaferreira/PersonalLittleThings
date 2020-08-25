@@ -15,15 +15,21 @@ public class InputGetterTest {
         String givenAnswer = "empty";
 
         while (!givenAnswer.equals("exit")) {
-            int testQANumber = (int) (Math.random() * inputGetterTest.getQuestionsSize());
+
+            // TODO: 24/08/2020
+            // change it so it doesn't repeat same questions. maybe put this logic in the question manager
+            int testQANumber = (int) (Math.random() * questionManager.getQuestionsSize());
 
             System.out.println("Question nº:" + testQANumber);
             System.out.println(questionManager.getQ(testQANumber));
 
+            // System.out.println(questionManager.getQ(testQANumber));
+
             try {
                 givenAnswer = terminalViewer.getTerminalInput();
-                System.out.println("A: " + givenAnswer + "\n");
-                // getCorrectAnswer
+                System.out.println("Your answer was: " + givenAnswer + "\n");
+                int givenAnswerNum = Integer.parseInt(givenAnswer);
+                System.out.println(questionManager.getA(testQANumber, givenAnswerNum));
             } catch (IOException e) {
                 e.printStackTrace();
             }
