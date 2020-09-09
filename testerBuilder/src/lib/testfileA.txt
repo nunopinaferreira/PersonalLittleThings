@@ -1,11 +1,142 @@
-1.Yes
-21.Object-oriented, Inheritance, Encapsulation, Polymorphism, Abstraction.
-22.Java uses Just In Time compiler to convert instructions into bytecodes.
-23.Eclipse and NetBeans are the IDE's of JAVA.
-24.A method which has the same name as the class name, and which exists by default but can be overloaded.
-25.Local variables have a scope limited to the method where they exist and Instance variables have a scope limited to the class.
-26.Inheritance, Encapsulation, Polymorphism, Abstraction, Interface.
-27.A relationship between classes, where one extends from another and inherits it's code so it can be reused.
-28.A form of protecting code from interference and assuring it's maintainability.
-29.TESTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
-30.
+1.test
+2.Abstract classes should be used primarily for objects that are closely related, whereas interfaces are best suited for providing a common functionality to unrelated classes. Abstract classes allow for default behaviors in methods and may contain non-final variables.
+3.A public method is accessible from everywhere. A protected one is accessible only by classes of the same package and subclasses. Private will be accessible within same class only.
+4.A static variable is common to all the instances (or objects) of the class because it is a class level variable. In other words you can say that only a single copy of static variable is created and shared among all the instances of the class.
+5.An exception is an event, which occurs during the execution of a program, that disrupts the normal flow of the program's instructions.
+6.No. Because RuntimeExceptions usually indicate an error in either expected behavior or program state. It assumes that one can "recover" from any exceptional behavior.
+7.testohshit
+8.Version 14. With 8 there was the introduction of lembdas, collections and streams. With 9 there were more methods added to Lists, Sets and Maps. Interfaces got private methods.
+9.The purpose of garbage collection is to identify and discard those objects that are no longer needed by the application, in order for the resources to be reclaimed and reused.
+10.A HashSet does not sort it's elements, while a TreeSet does. Also, a LinkedHashSet will retain the insertion order.
+11.testagagaggsgsg
+12.testgsgdf3gsgdfs
+13.The contract between equals() and hashCode() is: 1) If two objects are equal, then they must have the same hash code. 2) If two objects have the same hash code, they may or may not be equal. The idea behind a Map is to be able to find an object faster than a linear search.
+14.It defines the relationship between resources consumption (in time and space measures) and inputs (through operations such as sorting, insertion, access, search, deletion) and is usually represented by the mathematical convention "Big O Notation" (such as 0(log n) - logarithmic or 0(n) - linear).
+15.Computer programming uses Big O notation to classify algorithms according to how their computing time or space requirements grow as the input size grows.
+16.log2(n)
+17.testxbcvxbcxcb
+18.Bubble Sort (elements are swapped one by one by comparison with the previous one, in each iteration. O(n^2)). Insertion Sort (two arrays are used, the original for unsorted and a new one to insert the next element in the correct order, by comparing it with the elements on the 2nd array. O(n^2) ). Selection Sort (Selection Sort also divides the array into a sorted and unsorted subarray. Though, this time, the sorted subarray is formed by inserting the minimum element of the unsorted subarray at the end of the sorted array, by swapping). Merge Sort. Heap Sort. Quick Sort.
+19.test
+20.test
+21.OOP oriented. Everything is an Object. Platform independent and architecture neutral. Secure and robust. Compiled language.
+22.Java uses Just-In-Time compiler to enable high performance. Just-In-Time compiler is a program that turns Java bytecode, which is a program that contains instructions that must be interpreted into instructions that can be sent directly to the processor.
+23.test
+24.test
+25.test
+26.Abstraction, encapsulation, inheritance, and polymorphism.
+27.One of the core concepts of OOP. It's a mechanism that allows to base an object or class upon another object (prototype) or class, retaining similar implementation.
+28.Encapsulation in Java is a mechanism of wrapping the data (variables) and code acting on the data (methods) together as a single unit. In encapsulation, the variables of a class will be hidden from other classes, and can be accessed only through the methods of their current class.
+29.In other words, polymorphism allows you to define one interface and have multiple implementations.
+30.The process of providing an implementation that will replace another (from the superclass). A fundamental part of polymorphism and inheritance.
+31.Method Overloading is a feature that allows a class to have more than one method having the same name, if their argument lists are different. It is similar to constructor overloading in Java, that allows a class to have more than one constructor having different argument lists.
+32.test
+33.Abstract class: is a restricted class that cannot be used to create objects (to access it, it must be inherited from another class).
+34.test
+36.test
+37.HashMap is non synchronized. It is not-thread safe and can’t be shared between many threads without proper synchronization code whereas Hashtable is synchronized. It is thread-safe and can be shared with many threads. HashMap allows one null key and multiple null values whereas Hashtable doesn’t allow any null key or value. HashMap is generally preferred over HashTable if thread synchronization is not needed
+38.test
+39.Main difference is methods of a Java interface are implicitly abstract and cannot have implementations. A Java abstract class can have instance methods that implements a default behavior. Variables declared in a Java interface is by default final. An abstract class may contain non-final variables
+40.a framework that provides an architecture to store and manipulate the group of objects.
+41.test
+42.An ordered collection means that the elements of the collection have a specific order. The order is independent of the value. A sorted collection means that not only does the collection have order, but the order depends on the value of the element.
+43.test
+44.test
+45.test
+46.It's a blueprint to create objects.
+47.test
+48.test
+49.test
+50.There are List, Queue and Set.
+51.A priority queue is a class in Java from the Collection Framework that implements the Queue interface. Wherein all the elements are ordered as per their natural ordering or based on a custom Comparator supplied at the time of creation.
+52.Exceptions are events that occur during the execution of programs that disrupt the normal flow of instructions. In Java an exception is an object that wraps an error even that occurred within a method.
+53.test
+54.test
+55.Separating Error Handling code from regular code. Propagating Errors Up the Call Stack. Grouping Error Types and Error Differentiation
+56.test
+57.An exception is first thrown from the top of the stack and if it is not caught, it drops down the call stack to the previous method,If not caught there, the exception again drops down to the previous method, and so on until they are caught or until they reach the very bottom of the call stack.
+58.It is a non-access modifier applicable to a variable (which can only be initialized once and becomes a constant), a method (cannot be overriden) or a class (cannot be extended(inherited)).
+59.test
+60.A thread can be created by implementing the Runnable interface and overriding the run() method. Then a Thread object can be created and the start() method called. One can also create a subclass of Thread and override the run() method. The Main thread in Java is the one that begins executing when the program starts.
+61.test
+62.A yield() method is a static method of Thread class and it can stop the currently executing thread and will give a chance to other waiting threads of the same priority. If in case there are no waiting threads or if all the waiting threads have low priority then the same thread will continue its execution.
+63.test
+64.First and main difference between notify() and notifyAll() method is that, if multiple threads is waiting on any lock in Java, notify method send notification to only one of waiting thread while notifyAll informs all threads waiting on that lock.
+65.Whenever we want to stop a thread from running state by calling the stop() method of Thread class in Java. This method stops the execution of a running thread and removes it from the waiting threads pool and garbage collected. A thread will also move to the dead state automatically when it reaches the end of its method.
+66.The sleep() method is a static method of Thread class and it makes the thread sleep/stop working for a specific amount of time. The sleep() method throws an InterruptedException if a thread is interrupted by other threads, that means Thread.
+67.test
+68.test
+69.test
+70.The thread is in new state if you create an instance of Thread class but before the invocation of start() method. The thread is in runnable state after invocation of start() method, but the thread scheduler has not selected it to be the running thread. The thread is in running state (this is not a real state) if the thread scheduler has selected it. This is the state when the thread is still alive, but is currently not eligible to run. A thread is in terminated or dead state when its run() method exits.
+71.Synchronization in java is the capability to control the access of multiple threads to any shared resource. Java Synchronization is better option where we want to allow only one thread to access the shared resource.
+72.test
+73.test
+74.test
+75.test
+76.test
+77.Serialization is a mechanism of converting the state of an object into a byte stream. Deserialization is the reverse process where the byte stream is used to recreate the actual Java object in memory. ... So, the object serialized on one platform can be deserialized on a different platform.
+78.test
+79.test
+80.test
+81.JMS provides for two types of messaging models, publish-and-subscribe and point-to-point queuing. The JMS specification refers to these as messaging domains. In JMS terminology, publish-and-subscribe and point-to-point are frequently shortened to pub/sub and p2p (or PTP), respectively.
+82.test
+83.You can use a nested for loop to iterate through every element and compare it with every other element (complexity O(n^2) - excluding itself through array position comparison - or you can insert it into an Set (since it doesn't allow duplicates) and check those who return false when doing so (complexity O(n).
+84.test
+85.test
+86.test
+87.test
+88.test
+89.test
+90.test
+91.test
+92.test
+93.By finding the size first. To do it in only one iteration, we need 2 different pointers. First pointer goes every 2 nodes, and second pointer goes 1 by 1. When first pointer reaches the end, the second will be at the middle position.
+94.Use "Floyd's cycle-finding algorithm", also known as tortoise and hare algorithm. The idea is to have two references to the list and move them at different speeds. Move one forward by 1 node and the other by 2 nodes.
+95.test
+96.test
+97.test
+98.test
+99.test
+100.test
+101.Either using a nested loop that compares every character Vs every character, or adding them to a Set and using the false/true returned for doubles as the cue.
+102.Transform the strings into an array of char (toCharArray()), use Array.sort and make a method to compare length and iterate through each char and compare it.
+103.test
+104.Make a method that addresses null and string size <1 and that receives a string argument. It should return string.charAt for last letter, and then call itself passing as argument the substring from first to last desired letter of that same string (note: substring last argument is exclusive).
+105.test
+106.Using a nested for loop that compares charAt or putting them into a Set and checking for the false return.
+107.test
+108.test
+109.test
+110.test
+111.test
+112.test
+113.test
+114.NLR(node-left-right). The root first, followed by left subtree, and the right subtree.
+115.test
+116.The left subtree is visited first, then the root and later the right sub-tree. We should always remember that every node may represent a subtree itself.If a binary tree is traversed in-order, the output will produce sorted key values in an ascending order.
+117.test
+118.test
+119.test
+120.test
+121.test
+122.test
+123.test
+124.test
+125.Insertion sort is a simple sorting algorithm that works similar to the way you sort playing cards in your hands. The array is virtually split into a sorted and an unsorted part. Values from the unsorted part are picked and placed at the correct position in the sorted part.
+126.test
+127.test
+128.test
+129.It orders numbers by digit (using counting sort), starting from the last digit.
+130.This is a bit pointless, but let's say for x = 10 & y = 5; x = x+y(15), then y=x-y(10), then x=x-y(5);
+131.test
+132.What?
+133.Hibernate is an open source object relational mapping (ORM) tool that provides a framework to map object-oriented domain models to relational databases for web applications.
+134.test
+135.Hibernate is database independent, and JDBC isn't. You don't need to learn SQL for Hibernate, as it uses a set of Objects. Hibernate supports 2 cache levels, while in JDBC you would need to implement your own java cache. Hibernate supports Query cache and provides statistics. No need to create connection pool in Hibernate, you can use c3p0. Hibernate supports automatic versioning of rows and you load objects on start up with lazy=false.
+136.test
+137.test
+138.test
+139.test
+140.test
+141.test
+142.test
+143."final" is a reserved keyword that identifies a non-access modifier applicable to variables, methods or classes. "finally" is a reserved keyword used in try/catch blocks, to ensure the execution of a section of code. "finalize" is a method called by the Garbage Collector before deleting/destroying an object.

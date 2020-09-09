@@ -38,19 +38,15 @@ public class InputGetter {
 
     public void getInputs(String filepath, String documentType) {
         try {
-            FileInputStream file = new FileInputStream(filepath);
+            BufferedReader readPhrase = new BufferedReader(new FileReader(filepath));
             String thisLine;
-            BufferedInputStream bufferedFile = new BufferedInputStream(file);
-            InputStreamReader readFile = new InputStreamReader(bufferedFile);
-            BufferedReader readPhrase = new BufferedReader(readFile);
+
 
             while ((thisLine = readPhrase.readLine()) !=null) {
                 String line = thisLine;
                 int dividerBetweenNumberAndPhrase = line.indexOf(".");
 
-                //System.out.println("Divider is: " + dividerBetweenNumberAndPhrase + " and: " + line);
-
-                String phrase = line.substring(dividerBetweenNumberAndPhrase+1);
+                String phrase = line.substring(dividerBetweenNumberAndPhrase + 1);
                 String phraseNumber = line.substring(0, dividerBetweenNumberAndPhrase);
 
                 int num = fileChecker.checksNumberConforms(phraseNumber);
@@ -63,9 +59,7 @@ public class InputGetter {
                         answerList.put(num, phrase);
                     }
                 }
-            file.close();
-            bufferedFile.close();
-            readFile.close();
+
             readPhrase.close();
 
         } catch (FileNotFoundException e) {
@@ -92,9 +86,6 @@ public class InputGetter {
         if (type.equals("DA")) {
             dummyList.put(phraseNumber, phrase);
         }
-
     }
-
-
 
     }

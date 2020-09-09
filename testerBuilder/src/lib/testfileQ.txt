@@ -85,11 +85,12 @@
 85.How do you find all pairs of an integer array whose sum is equal to a given number?
 86.How do you find duplicate numbers in an array if it contains multiple duplicates?
 87.How are duplicates removed from a given array in Java? 
-88.How is an integer array sorted in place using the quicksort algorithm? 
+88.How is an integer array sorted in place using the quicksort algorithm?
+89.Missing a question here!
 90.How do you remove duplicates from an array in place? 
 91.How do you reverse an array in place in Java?
 92.How are duplicates removed from an array without using any library? 
-93.How do you find the middle element of a singly linked list in one pass? 
+93.How do you find the middle element of a linked list in one pass?
 94.How do you check if a given linked list contains a cycle? How do you find the starting node of the cycle? 
 95.How do you reverse a linked list? 
 96.How do you reverse a singly linked list without recursion? 
@@ -139,3 +140,4 @@
 140.What is HQL?
 141.How to achieve mapping in Hibernate?
 142.Name some of the important interfaces of Hibernate framework.
+143.What is the difference between "final", "finally" and "finalized"?

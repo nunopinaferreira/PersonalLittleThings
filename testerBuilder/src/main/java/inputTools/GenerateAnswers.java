@@ -1,3 +1,5 @@
+package inputTools;
+
 import java.io.*;
 
 public class GenerateAnswers {
