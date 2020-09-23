@@ -1,0 +1,6 @@
+{
+    "editor.fontSize": 18,
+    "workbench.colorCustomizations": {
+    "terminal.ansiBlack": "#ff0000"
+    }
+}
