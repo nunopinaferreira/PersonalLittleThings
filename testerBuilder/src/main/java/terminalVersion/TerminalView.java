@@ -37,7 +37,7 @@ public class TerminalView {
         String givenAnswer;
         int testQANumber = (int) (Math.random() * questionManager.getQuestionsSize());
 
-            // TODO: 24/08/2020 change it so it doesn't repeat same questions. maybe put this logic in the question manager
+
             System.out.println("Question nº:" + testQANumber);
             System.out.println(questionManager.getQ(testQANumber));
 

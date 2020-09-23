@@ -50,10 +50,10 @@ public class QuestionManager implements QuestionManagerInterface {
     public String getQ(int key) {
 
         String Q = questions.get(key);
-        HashSet<String> questionOptions = new HashSet<>();
+        HashSet<String> questionOptions = new HashSet<>(); //a Set to gather the presented questions;
         questionOptions.add(answers.get(key));
 
-        while (questionOptions.size() < 5) {
+        while (questionOptions.size() < 5) { // will add random answers as options to the Set until 5;
                     questionOptions.add(answers.get((int) (Math.random() * answers.size())));
                 }
 
@@ -74,7 +74,9 @@ public class QuestionManager implements QuestionManagerInterface {
 
 
 
-    // method to get answers from map and compare with the given answer. If the answer is correct it will remove the question from the Map (but not the answer);
+    // method to get answers from map and compare with the given answer.
+    // If the answer is correct it will remove the question from the Map (but not the answer);
+    // This should ensure that correctly answered questions won't repeat
     @Override
     public String getA(int key, int givenAnswer) {
 
