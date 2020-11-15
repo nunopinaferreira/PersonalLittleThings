@@ -192,7 +192,7 @@ const equipArmor = function(individual, item) {
 // function to pick body part target when hit
 const randomizeAfterHitChance = function(individual) {
     let afterHitChance = randomizer(100);
-    console.log(`###afterhitchance is ${afterHitChance}`);
+    console.log(`| afterhitchance is ${afterHitChance} |`);
 
     if (afterHitChance >= 90) return (individual._head);
     if (afterHitChance >= 50) return (individual._chest);
@@ -251,22 +251,22 @@ const dmgCalculator = function(individualOne, bodyPartHit) {
         (totalSlashDmg > 0 ? totalSlashDmg : 0) +
         (totalBluntDmg > 0 ? totalBluntDmg : 0); 
 
-    console.log('###individualOne rightHand pierce dmg: ' + individualOne._rightHand._pierceDmg);
-    console.log('###bodypartHit drPierce: ' + bodyPartHit._drPierce);
-    console.log('###totalPierceDmg: ' + totalPierceDmg);
-    console.log('###totalSlashDmg: ' + totalSlashDmg);
-    console.log('###totalBluntDmg: ' + totalBluntDmg);
+    console.log('| individualOne rightHand pierce dmg: ' + individualOne._rightHand._pierceDmg + ' |');
+    console.log('| bodypartHit drPierce: ' + bodyPartHit._drPierce + ' |');
+    console.log('| totalPierceDmg: ' + totalPierceDmg + ' |');
+    console.log('| totalSlashDmg: ' + totalSlashDmg + ' |');
+    console.log('| totalBluntDmg: ' + totalBluntDmg + ' |');
 
-    console.log('###totaldmg is: ' + totalDmg);
+    console.log('| totaldmg is: ' + totalDmg + ' |');
     return totalDmg;
 };
 
 // function to apply changes to health
 const updateHealth = function(individual, amount) {
-    console.log('###individual health before: ' + individual._health);
+    console.log('| individual health before: ' + individual._health + ' |');
     individual._health -= amount; 
-    console.log('###health was changed with: ' + amount)
-    console.log('###individual health after: ' + individual._health);
+    console.log('| health was changed with: ' + amount + ' |')
+    console.log('| individual health after: ' + individual._health + ' |');
     }
 
 
@@ -276,8 +276,8 @@ const updateHealth = function(individual, amount) {
 const startFight = function(individualOne, individualTwo, battleType, numRounds) { 
     console.log(
     `
-    The fight has begun!! 
-    ${individualOne._name} faces ${individualTwo._name}!
+    ### --- The fight has begun!! --- ### 
+    ### --- ${individualOne._name} faces ${individualTwo._name}! --- ###
     `) 
         
     battleType(individualOne, individualTwo, numRounds);
@@ -297,9 +297,9 @@ const duelRound = function(individualOne, individualTwo) {
     // in case we want to see the individual rolls:
     console.log(
     `
-    ###hidden info
-    ${individualOne._name} attacks with a roll of ${attackSpeed} and ${individualTwo._name} defends with a roll of ${defenseSpeed}
-    hit chance is ${hitChance};
+    | hidden info |
+    | ${individualOne._name} attacks with a roll of ${attackSpeed} and ${individualTwo._name} defends with a roll of ${defenseSpeed} |
+    | hit chance is ${hitChance} |
     `
     );
     
@@ -309,7 +309,8 @@ const duelRound = function(individualOne, individualTwo) {
         let totalDmgTaken = dmgCalculator(individualOne, bodyPartHit); // will store a positive number.
         updateHealth(individualTwo, totalDmgTaken);
 
-        console.log(`${successHit()} A mighty blow in the ${bodyPartHit._armorName}
+        console.log(`
+        ### --- ${successHit()} A mighty blow in the ${bodyPartHit._armorName} --- ###
         `);
 
         return;
@@ -324,11 +325,16 @@ const duelRound = function(individualOne, individualTwo) {
 // function for battleType - if it's a set number of rounds or until 0 health
 let battleTypes = {
     battleTillDeath: function(individualOne, individualTwo) {
-        if (individualOne._health <= 0 && individualTwo._health <= 0) {
-            console.log('fight is over')
+        if (individualOne._health <= 0 || individualTwo._health <= 0) {
+            let winner = individualOne; // winner is individualOne, except if his health is 0 (doesn't fix eventual ties);
+                if (individualOne._health <= 0) winner = individualTwo; 
+            console.log(`
+            ### --- The fight is over! Winner is ${winner._name}
+            `)
             return;
         };
         duelRound(individualOne, individualTwo);
+        duelRound(individualTwo, individualOne); // since the duelRound translates in a single attack/defend event, so they can swap. 
         battleTypes.battleTillDeath(individualOne, individualTwo);
     }, 
 
@@ -340,6 +346,7 @@ let battleTypes = {
         }
         numRoundsLeft--; 
         duelRound(individualOne, individualTwo);
+        duelRound(individualTwo, IndividualOne);
         battleTypes.battlePerRounds(individualOne, individualTwo, numRoundsLeft);
     },
 };
@@ -398,9 +405,9 @@ equipArmor(Jack, leatherGloves);
 
 // ACTION
 
-//startFight(Mario, Jack, battleTypes.battleTillDeath);
+startFight(Mario, Jack, battleTypes.battleTillDeath);
 
-startFight(Mario, Jack, battleTypes.battlePerRounds, 5);
+//startFight(Mario, Jack, battleTypes.battlePerRounds, 2);
 
 
 

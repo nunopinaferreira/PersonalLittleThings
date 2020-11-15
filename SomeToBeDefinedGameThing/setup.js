@@ -6,3 +6,8 @@ createButton = function() {
 }
 
 createButton();
+
+
+var flipButton = function() {
+    $.getScript("individual.js");
+}
