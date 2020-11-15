@@ -65,7 +65,8 @@ define(function() {
 
 
 
-
+    // creation depends on the single or 2 line joke type
+    // timeout added to create interval for the delivery of the 2nd line
     internals.createJokeBox = function(joke) {
 
         if (joke.type === 'single') {
