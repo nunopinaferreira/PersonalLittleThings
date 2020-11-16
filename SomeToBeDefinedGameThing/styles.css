@@ -1,0 +1,44 @@
+#mainHeader {
+}
+
+#divOne {
+}
+
+#fightBox {
+    margin: auto;
+    position: absolute;
+    width: 800px;
+    height: 550px;
+    border: 5px solid blue;
+
+}
+
+/*
+#divThree {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scale: 100%;
+}
+
+
+#Mario {
+    width:150px;
+    left:10%;
+    object-fit: contain;
+    
+    border: 3px solid #73AD21;
+}
+
+#Artemis {
+    width:100px;
+    left:10%;
+    object-fit: contain;
+    
+    border: 3px solid #73AD21;
+}
+
+.Fighter {
+
+}
+*/
