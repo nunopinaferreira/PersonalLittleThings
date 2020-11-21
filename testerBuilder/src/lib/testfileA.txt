@@ -6,7 +6,7 @@
 6.No. Because RuntimeExceptions usually indicate an error in either expected behavior or program state. It assumes that one can "recover" from any exceptional behavior.
 7.testohshit
 8.Version 14. With 8 there was the introduction of lembdas, collections and streams. With 9 there were more methods added to Lists, Sets and Maps. Interfaces got private methods.
-9.The purpose of garbage collection is to identify and discard those objects that are no longer needed by the application, in order for the resources to be reclaimed and reused.
+9.The purpose of garbage collector is to identify and discard those objects that are no longer needed by the application, in order for the resources to be reclaimed and reused.
 10.A HashSet does not sort it's elements, while a TreeSet does. Also, a LinkedHashSet will retain the insertion order.
 11.testagagaggsgsg
 12.testgsgdf3gsgdfs
@@ -41,7 +41,7 @@
 42.An ordered collection means that the elements of the collection have a specific order. The order is independent of the value. A sorted collection means that not only does the collection have order, but the order depends on the value of the element.
 43.test
 44.test
-45.test
+45.A program that acts as an interface to write code. IntelliJ, Eclipse and NetBeans are the most popular.
 46.It's a blueprint to create objects.
 47.test
 48.test
@@ -87,7 +87,7 @@
 88.test
 89.test
 90.test
-91.test
+91.Iterate through the array, swapping the 1st element with the last, until reach the middle.
 92.test
 93.By finding the size first. To do it in only one iteration, we need 2 different pointers. First pointer goes every 2 nodes, and second pointer goes 1 by 1. When first pointer reaches the end, the second will be at the middle position.
 94.Use "Floyd's cycle-finding algorithm", also known as tortoise and hare algorithm. The idea is to have two references to the list and move them at different speeds. Move one forward by 1 node and the other by 2 nodes.
@@ -108,13 +108,13 @@
 109.test
 110.test
 111.test
-112.test
+112.Reversing all the characters of the string and checking if it matches the original one.
 113.test
 114.NLR(node-left-right). The root first, followed by left subtree, and the right subtree.
 115.test
 116.The left subtree is visited first, then the root and later the right sub-tree. We should always remember that every node may represent a subtree itself.If a binary tree is traversed in-order, the output will produce sorted key values in an ascending order.
 117.test
-118.test
+118.In this traversal method, the root node is visited last, hence the name. First we traverse the left subtree, then the right subtree and finally the root node.
 119.test
 120.test
 121.test
