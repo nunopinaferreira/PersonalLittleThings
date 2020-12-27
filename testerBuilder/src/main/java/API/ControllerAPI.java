@@ -14,6 +14,7 @@ import questionManager.QuestionManagerInterface;
 public class ControllerAPI {
 
     private QuestionManagerInterface questionManager;
+
     private int testQANumber;
 
     @RequestMapping(method = RequestMethod.GET, path = {"/", ""})
@@ -24,10 +25,11 @@ public class ControllerAPI {
         return new ResponseEntity<>(questionManager.getQ(testQANumber), HttpStatus.OK);
     }
 
-    /*
-    @RequestMapping(method = RequestMethod.GET, path = {"/{ }"}
-    public ResponseEntity<String> responseWithAnswer( , ) {
+/*
+    @RequestMapping(method = RequestMethod.GET, path = {"/{ }"})
+    public ResponseEntity<String> responseWithAnswer() {
 
             }
 */
+
 }

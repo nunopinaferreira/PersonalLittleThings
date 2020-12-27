@@ -10,17 +10,19 @@
     width: 800px;
     height: 550px;
     border: 5px solid blue;
-
+    border-radius: 15px;
+    padding: 20px 40px;
 }
 
-/*
+
 #divThree {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    scale: 100%;
+    width: 800px;
+    height: 550px;
+    scale: auto;
+    background-image: url("lib/street.jpg");
+    padding: 40px;
 }
-
+/*
 
 #Mario {
     width:150px;

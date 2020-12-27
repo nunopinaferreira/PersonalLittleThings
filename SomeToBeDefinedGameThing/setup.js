@@ -43,9 +43,9 @@ var moveRight = function() {
 }
 
 var jump = function() {
-    var jumpDistance = 10;
-    var jumpTimes = 4;
-    var jumpInterval = 200; // in milliseconds
+    var jumpDistance = 20;
+    var jumpTimes = 5;
+    var jumpInterval = 5000; // in milliseconds
     
     // set the interval with a check in the "go up" function to clear the interval
     // after reaching the 0 in jumpTimes counter

@@ -10,7 +10,7 @@ public class Fibonacci {
 
 
         // if it implies the sum of the 2 previous ones, let's start at the 3rd number
-        ArrayList<Integer> fibonacciSequence = new ArrayList<Integer>();
+        ArrayList<Integer> fibonacciSequence = new ArrayList<>();
         fibonacciSequence.add(0);
         fibonacciSequence.add(1);
 
